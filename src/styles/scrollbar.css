@@ -1,0 +1,52 @@
+/* Custom Scrollbar Styles */
+/* For Webkit browsers like Chrome/Safari/Edge */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 4px;
+}
+
+/* Light Mode */
+.custom-scrollbar.light::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.3);
+  border-radius: 100vh;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.custom-scrollbar.light::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.5);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Dark Mode */
+.custom-scrollbar.dark::-webkit-scrollbar-thumb {
+  background: rgba(34, 211, 238, 0.3);
+  border-radius: 100vh;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.custom-scrollbar.dark::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.5);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+}
+
+.custom-scrollbar.light {
+  scrollbar-color: rgba(99, 102, 241, 0.3) transparent;
+}
+
+.custom-scrollbar.dark {
+  scrollbar-color: rgba(34, 211, 238, 0.3) transparent;
+}
